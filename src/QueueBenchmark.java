@@ -4,9 +4,6 @@ import java.util.concurrent.BlockingQueue;
 
 public class QueueBenchmark {
 
-    record Result(int capacity, int producerCount, long timeMs) {
-    }
-
     public static void main(String[] args) {
         if (args.length != 3) {
             System.out.println("Usage: QueueBenchmark <threadCount> <itemCount> <queueType> (java|custom)");
